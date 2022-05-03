@@ -1,0 +1,44 @@
+
+.hero{
+    background-color:#30303d;
+   align-items: stretch;
+    color:#fff;
+    /* height:551px; */
+    display: flex;
+    /* flex-direction: row;
+    justify-content: space-around;
+    align-items: center; */
+}
+.hero div{
+    /* border:1px solid blue; */
+}
+.elem1{
+    /* background-color: blue;
+    height:251px;
+    width: 200px; */
+    flex: 1;
+    order: 3;
+}
+.elem2{
+    /* background-color: green;
+    height:251px;
+    width: 200px; */
+    flex: 1;
+    order: 1;
+}
+.elem3{
+    /* background-color: green;
+    height:251px;
+    width: 200px; */
+    flex: 1;
+    order: 2;
+}
+.elem1, .elem2,.elem3 {
+    padding: 10px;
+    /* text-align: center; */
+    /* align-content: center; */
+}
+.hero h1{
+    color:red;
+    font-size: large;
+}

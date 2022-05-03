@@ -1,0 +1,32 @@
+
+
+.container{
+
+}
+
+.col{
+    border:1px solid red;
+    justify-content: center;
+    padding: 2vh 2vw;
+
+}
+
+
+
+
+@media screen and (min-width: 1024px){
+        .container{
+            display: flex;
+            align-content:center;
+            justify-content: center;
+        }
+
+        .col{
+            /* border:1px solid red; */
+           
+
+            padding: 2vh 2vw;
+        
+        }
+
+}

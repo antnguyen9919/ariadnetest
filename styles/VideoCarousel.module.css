@@ -1,0 +1,34 @@
+.reactPlayer{
+    height: 100vh;
+    border-radius: 6px;
+    overflow: hidden;
+    /* border: 1px solid red; */
+}
+.arrow {
+    background:transparent;
+    position: absolute;
+    cursor: pointer;
+    z-index: 10;
+    transform: scale(2.1);
+  }
+  .arrow svg {
+    transition: color 300ms;
+  }
+  .arrow svg:hover {
+    color: #979797;
+  }
+  .next {
+    right: 0%;
+    top: 50%;
+  }
+  
+  .prev {
+    left: 0%;
+    top: 50%;
+  }
+
+@media only screen and (max-width: 768px){
+    .reactPlayer{
+        height: 40vh
+    }
+}
