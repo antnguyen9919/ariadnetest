@@ -601,7 +601,7 @@ variants = {variants} animate = {controls2}>
 
 
             </div>
-               <p>“When they said: We are the Google Analytics of the physical world, they were not kidding!"</p>
+               <p>&quot;When they said: We are the Google Analytics of the physical world, they were not kidding!&quot;</p>
                <h4 className='my-3'>Thomas Grabert</h4>
                <h4 className='my-3'>Managing Director, Ö-Center Mall</h4>
           </motion.div>

@@ -150,11 +150,11 @@ We enable and lead you to hyperlocal marketing.
 
           <div className = {styles.caseBox} >
           <div className = {styles.caseBox1}>
-          <a href="/industries/retail-stores">
+          <Link href="/industries/retail-stores">
 
 
                <h4 className='my-3 pt-20 pr-4'>Retail</h4>
-          </a>
+          </Link>
           </div>
           </div>
           </div>
@@ -162,11 +162,11 @@ We enable and lead you to hyperlocal marketing.
           <div className={styles.caseContainer}>
           <div className = {styles.caseBox}>
           <div className = {styles.caseBox2}>
-          <a href="/industries/shopping-centers">
+          <Link href="/industries/shopping-centers">
 
 
                <h4 className='my-3 pt-20 pr-4'>Malls</h4>
-          </a>
+          </Link>
           </div>
           </div>
           </div>
@@ -174,11 +174,11 @@ We enable and lead you to hyperlocal marketing.
           <div className={styles.caseContainer}>
           <div className = {styles.caseBox}>
           <div className = {styles.caseBox3}>
-          <a href="/industries/airports">
+          <Link href="/industries/airports">
 
 
                <h4 className='my-3 pt-20 pr-4'>Airports</h4>
-          </a>
+          </Link>
           </div>
           </div>
 
@@ -187,11 +187,11 @@ We enable and lead you to hyperlocal marketing.
           <div className={styles.caseContainer}>
           <div className = {styles.caseBox}>
           <div className = {styles.caseBox4}>
-          <a href="/industries/transportation">
+          <Link href="/industries/transportation">
 
 
                <h4 className='my-3 pt-20 pr-4'>Trasportation</h4>
-          </a>
+          </Link>
           </div>
           </div>
 
@@ -200,11 +200,11 @@ We enable and lead you to hyperlocal marketing.
           <div className={styles.caseContainer}>
           <div className = {styles.caseBox}>
           <div className = {styles.caseBox5}>
-          <a href="/industries/cities">
+          <Link href="/industries/cities">
 
 
                <h4 className='my-3 pt-20 pr-4'>Cities</h4>
-          </a>
+          </Link>
           </div>
           </div>
 
@@ -214,12 +214,12 @@ We enable and lead you to hyperlocal marketing.
           <div className={styles.caseContainer}>
           <div className = {styles.caseBox}>
           <div className = {styles.caseBox6}>
-          <a href="/industries/hospitality">
+          <Link href="/industries/hospitality">
 
 
 
                <h4 className='my-3 pt-20 pr-4'>Hospitality</h4>
-          </a>
+          </Link>
           </div>
           </div>
           </div>
@@ -231,7 +231,7 @@ We enable and lead you to hyperlocal marketing.
         <div className={styles.blackCTA}>
         <div className={styles.innerCTA}>
         <h1 className='text-center text-white' style={{fontWeight:"300"}} >Work together?</h1>
-      <Link href ="/letstalk"><a><button className=' bg-white text-black hover:bg-slate-200 py-2 mt-8 px-3 text-lg mt-5'>Let&rsquo;s Talk</button></a></Link>
+      <Link href ="/letstalk"><button className=' bg-white text-black hover:bg-slate-200 py-2 mt-8 px-3 text-lg mt-5'>Let&rsquo;s Talk</button></Link>
       </div>
         </div>
     </div>
