@@ -106,56 +106,7 @@ const RLvariants ={
 
 export default function Home() {
 
-  const items = [
-    {
-      title: "Apple Macbook Pro",
-      description: "Apple M1 Chip with 8‑Core CPU and 8‑Core GPU 256GB Storage",
-      image:
-        "https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/mbp-spacegray-select-202011_GEO_IN?wid=904&hei=840&fmt=jpeg&qlt=80&.v=1613672874000",
-      price: 122900,
-    },
-  ];
 
-  const router = useRouter();
-  const { status } = router.query;
-
-  const [loading, setLoading] = useState(false);
-
-  
-  const changeQuantity = (value) => {
-    // Don't allow the quantity less than 0, if the quantity is greater than value entered by user then the user entered quantity is used, else 0
-    setItem({ ...item, quantity: Math.max(0, value) });
-  };
-
-  const onInputChange = (e) => {
-    changeQuantity(parseInt(e.target.value));
-  };
-
-  const onQuantityPlus = () => {
-    changeQuantity(item.quantity + 1);
-  };
-
-  const onQuantityMinus = () => {
-    changeQuantity(item.quantity - 1);
-  };
-
-  const publishableKey = `${process.env.NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY}`;
-  const stripePromise = loadStripe(publishableKey);
-  const createCheckOutSession = async () => {
-    const stripe = await stripePromise;
-
-    const checkoutSession = await axios.post("/api/create-checkout-session", {
-      items: items,
-      email: "test@gmail.com",
-    });
-    const result = await stripe.redirectToCheckout({
-      sessionId: checkoutSession.data.id,
-    });
-
-    if (result.error) {
-      alert(result.error.message);
-    }
-  };
   
   
   const [element,controls] = useScroll();
