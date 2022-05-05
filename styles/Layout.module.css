@@ -3,14 +3,14 @@
 
 @media  (min-width:1537px){
 .main h1{
-    font-size: 3.4rem;
+    font-size: calc(18px + 2em);
     line-height: calc(50px + 1.5vw);
     font-weight: 400;
 }
 .main h2{
     font-size: calc(12px + 1em);
     line-height: calc(10px + 1vw);
-    font-weight: 400;
+    font-weight: 500;
 }
 
 .main h3{
@@ -26,7 +26,7 @@
 
 
 .main p{
-    font-size: calc(8px + 1.1vw);
+    font-size: calc(10px + 0.7em);
     line-height: calc(20px + 1vw);
     font-weight: 300;
 }
@@ -50,8 +50,8 @@
 @media  (max-width:576px){
     
     .main h1{
-        font-size: 2.5rem;
-        line-height: 3.8rem;
+        font-size: calc(8px + 1.4em);
+        line-height: 3rem;
     }
     .main h2{
         font-size: 1.8rem;
@@ -62,11 +62,11 @@
         font-size: 1.7rem;
     }
     .main h4{
-        font-size: 1.4rem;
-        line-height: 1.8rem;
+        font-size: 1.2rem;
+        line-height: 1.6rem;
     }
     .main p{
-        font-size: 1.2rem;
+        font-size: 1.05rem;
         line-height: 1.8rem;
     }
 }
@@ -74,7 +74,7 @@
 @media only screen and (min-width:577px) and (max-width:1024px){
     
     .main h1{
-        font-size: 2.3rem;
+        font-size: calc(12px + 1em);
         line-height: 2.4rem;
     }
     .main h2{
@@ -86,19 +86,20 @@
         font-size: 1.7rem;
     }
     .main h4{
-        font-size: 1.4rem;
+        font-size: 1.2rem;
         line-height: 1.8rem;
     }
     .main p{
-        font-size: 1.3rem;
+        font-size: 1.1rem;
         line-height: 1.5rem;
+        font-weight: 300;
     }
 }
 
 @media only screen and (min-width:1025px) and (max-width:1536px){
     
     .main h1{
-        font-size: 2.8rem;
+        font-size: 2.4rem;
         line-height: 3.7rem;
     }
     .main h2{
@@ -110,11 +111,59 @@
         font-size: 1.7rem;
     }
     .main h4{
-        font-size: 1.4rem;
+        font-size: calc(8px + 0.7em);
         line-height: 1.8rem;
     }
     .main p{
-        font-size: 1.3rem;
+        font-size: calc(10px + 0.6vw);
         line-height: 2rem;
+    }
+}
+
+@media only screen and (min-width:1025px) and (max-width:1285px){
+    .main h1{
+        font-size: calc(12px + 1.2em);
+        line-height: 3rem;
+    }
+    .main h2{
+        font-size: calc(12px + 0.6em);
+        line-height: 2.3rem;
+    }
+
+    .main h3{
+        font-size: 1.7rem;
+    }
+    .main h4{
+        font-size: calc(7px + 0.6em);
+        line-height: 1.7rem;
+    }
+    .main p{
+        font-size: calc(8px + 0.6vw);
+        line-height: 1.5rem;
+    }
+}
+
+@media only screen and (min-width:577px) and (max-width:783px){
+    
+    .main h1{
+        font-size: calc(4px + 1.2em);
+        line-height: 2rem;
+    }
+    .main h2{
+        font-size: 1.5rem;
+        line-height: 2.3rem;
+    }
+
+    .main h3{
+        font-size: 1.7rem;
+    }
+    .main h4{
+        font-size: 1.2rem;
+        line-height: 1.8rem;
+    }
+    .main p{
+        font-size: calc(4px + 0.8em);
+        line-height: 1.4rem;
+        font-weight: 300;
     }
 }

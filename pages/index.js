@@ -64,6 +64,8 @@ import s22 from "../public/Photos/brands/s22.png"
 import floor from "../public/Photos/floor.png"
 import device2 from "../public/Photos/device2.png"
 import screen from "../public/Photos/screen.png"
+import s3 from "../public/Photos/brands/s3.png"
+
 
 
 
@@ -232,41 +234,71 @@ export default function Home() {
       <main className={styles.main}>
         
         <div className={styles.brandsContainerOne}>
+          <div className={styles.brandsContainerOneOne}>
+
             <Image src={s2} alt=""/>
             <Image src={s1} alt=""/>
             <Image src={s4} alt=""/> 
+
+
+        </div>
+
+          <div className={styles.brandsContainerOneTwo}>
+            
+
             <Image src={s5} alt=""/>          
             <Image src={s6} alt=""/>
-           
+            <Image src={s18} alt=""/>
+
+        </div>
+
         </div>   
 
         <div className={styles.brandsContainerTwo}>
             
+        <div className={styles.brandsContainerTwoOne}>
+
             <Image src={s7} alt=""/>
             <Image src={s8} alt=""/>
-            <Image src={s10} alt=""/>
-            <Image src={s9} alt=""/>
-            <Image src={s11} alt=""/>
-            
+            <Image src={s15} alt=""/> 
+
+
+            </div>
+
+            <div className={styles.brandsContainerTwoTwo}>
+
+
+            <Image src={s11} alt=""/>          
+            <Image src={s19} alt=""/>
+            <Image src={s20} alt=""/>
+
+            </div>
+
         </div> 
         
         <div className={styles.brandsContainerThree}>
             
+        <div className={styles.brandsContainerThreeOne}>
+
             <Image src={s12} alt=""/>
             <Image src={s13} alt=""/>
-            <Image src={s15} alt=""/>
-            <Image src={s14} alt=""/>
+            <Image src={s10} alt=""/> 
+
+
+            </div>
+
+            <div className={styles.brandsContainerThreeTwo}>
+
+
+            <Image src={s14} alt=""/>          
             <Image src={s16} alt=""/>
+            <Image src={s21} alt=""/>
+
+            </div>
+
+
         </div>  
 
-        <div className={styles.brandsContainerFour}>
-            
-            <Image src={s17} alt=""/>
-            <Image src={s18} alt=""/>
-            <Image src={s21} alt=""/>
-            <Image src={s20} alt=""/>
-            <Image src={s19} alt=""/>
-        </div>  
 
         <div className={`${styles.section1} `} id = "screens" ref = {element}
        
@@ -425,7 +457,7 @@ variants = {variants} animate = {controls2}>
               transition={{duration: 0.4, type: 'easeInOut'}} 
               initial="hidden"  exit="exit"
               variants = {variants} animate = {controls3}>
-          <h1 className='text-center'>The Ariadne Platform</h1>
+          <h1 className='text-center'>Ariadne Platform</h1>
 
               </motion.div>
 
@@ -534,13 +566,13 @@ variants = {variants} animate = {controls2}>
           initial="hidden"  exit="exit"
           variants = {DUvariants} animate = {controls7}>
           <div className={styles.testimonialImg}>
-          <Image src={s15} alt=''/>
+          <Image src={s5} alt=''/>
 
 
             </div>
-               <p>“You presented to us what we were expecting to see in at least 7 years.”</p>
-               <h4 className='my-3'>Janis Diekmann</h4>
-               <h4 className='my-3'>Innovation Manager, Deutsche Bahn</h4>
+               <p>“With 20% increase in product revenue, we scale it immediately to all of our 17 stores”</p>
+               <h4 className='my-3'>Dimitris Galanis</h4>
+               <h4 className='my-3'>CEO, Praktiker</h4>
           </motion.div>
 
           <motion.div className = {styles.testimonialBox}
@@ -562,13 +594,13 @@ variants = {variants} animate = {controls2}>
           initial="hidden"  exit="exit"
           variants = {DUvariants} animate = {controls7}>
           <div className={styles.testimonialImg}>
-          <Image src={s18} alt=''/>
+          <Image src={s16} alt=''/>
 
 
             </div>
-               <p>“I cannot think of anyone who does not need your devices.”</p>
-               <h4 className='my-3'>Gordon Bain</h4>
-               <h4 className='my-3'>Head of PD, Glasgow Airport</h4>
+               <p>“A truly plug-n-play solution! I did the installation myself!”</p>
+               <h4 className='my-3'>Gina Jacobs</h4>
+               <h4 className='my-3'>Business Development Manager, San Diego Airport</h4>
           </motion.div>
 
           <motion.div className = {styles.testimonialBox}
@@ -576,13 +608,13 @@ variants = {variants} animate = {controls2}>
           initial="hidden"  exit="exit"
           variants = {DUvariants} animate = {controls7}>
           <div className={styles.testimonialImg}>
-          <Image src={s12} alt=''/>
+          <Image src={s3} alt=''/>
 
 
             </div>
-               <p>“Your devices are like beacons on steroids.”</p>
-               <h4 className='my-3'>Anthony Lynsdale</h4>
-               <h4 className='my-3'>VP Information Technology, Atlantis The Palm</h4>
+               <p>“We recorded the ROI already in the first month with a 40% increase in product revenue!”</p>
+               <h4 className='my-3'>Rainer Latzlsperger</h4>
+               <h4 className='my-3'>Procurist, Weko</h4>
           </motion.div>
 
 
@@ -688,7 +720,7 @@ variants = {variants} animate = {controls9}>
 
           <iframe src="https://calendly.com/georgios-ariadnemaps/30min?month=2022-03"
           loading='lazy'          
-          frameBorder="0" width='100%' height='700em' backgroundColor = "white" title = 'calendly' sandbox="allow-same-origin allow-scripts" ></iframe>
+          frameBorder="0" max-width='100%' height='700em' backgroundColor = "white" title = 'calendly' sandbox="allow-same-origin allow-scripts" ></iframe>
           
           
         </div>
