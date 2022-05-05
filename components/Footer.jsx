@@ -22,10 +22,14 @@ function Footer() {
  
 <div className={styles.footerLinks}>
       
-  <div className={styles.footerLinkWrapper}>
+  <div className={`${styles.footerLinkWrapper}`}>
+
+    <div className={styles.logo}>
+
     <div className={styles.footerLinkItems}>
     <Link  href='/' ><a ><img src="/Photos/Asset16.png" alt="Ariadne Logo" width="140x"/></a></Link>
     </div>
+  </div>
   </div>
   <div className={styles.footerLinkWrapper}>
 
@@ -53,12 +57,12 @@ function Footer() {
       <Link href='/company/careers'>Careers</Link>
     </div>
     </div>
-  <div className={styles.footerLinkWrapper}>
+  <div className={`${styles.footerLinkWrapperMobile}`}>
     <div className={styles.footerLinkItems}>
       
     
     
-      <h3 className='text-2xl'>Contact Us</h3>
+      <h3 className='text-center'>Contact Us</h3>
       <div>
       </div>
       <div className={styles.para}>
@@ -76,7 +80,7 @@ contact@ariadnemaps.com
 
       </div>
       
-<div style={{fontSize:'20px'}}>
+<div style={{fontSize:'20px', marginTop:"0.5em"}}>
 <a style={{marginRight:'15px'}} href='https://www.facebook.com/ariadnemaps/'><i className='fab fa-facebook-f hover:scale-125'/></a>
       <a className= 'mx-3' href='https://www.youtube.com/channel/UCetG3dxFlJrFno0ChaJ5VXQ'><i className='fab fa-youtube hover:scale-125' /></a>
       <a className= 'mx-3' href='https://twitter.com/ariadne_maps'><i className='fab fa-twitter hover:scale-125' /></a>
@@ -93,7 +97,7 @@ contact@ariadnemaps.com
 <section className={styles.socialMedia}>
   <div className={styles.socialMediaWrap}>
    <div>
-    <small className={styles.websiteRights}>© 2019 - 2022 Ariadne Maps GmbH. All rights reserved.</small>
+    <small className={`${styles.websiteRights} pl-8`}>© 2019 - 2022 Ariadne Maps GmbH. All rights reserved.</small>
 
    </div>
     
@@ -103,10 +107,10 @@ contact@ariadnemaps.com
         href='/company/privacy'
        
       >
-        <a className={styles.socialiconLink}>Privacy Policy</a>
+        <a className={`${styles.socialiconLink}`}>Privacy Policy</a>
       </Link>
       <Link 
-        href='/'><a className={styles.socialiconLink}>Impressum</a></Link>
+        href='/'><a className={`${styles.socialiconLink} pr-8`}>Impressum</a></Link>
      
     </div>
   </div>
