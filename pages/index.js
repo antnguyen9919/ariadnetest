@@ -69,8 +69,6 @@ import s3 from "../public/Photos/brands/s3.png"
 
 
 
-import { loadStripe } from '@stripe/stripe-js';
-import axios from 'axios';
 import { useRouter } from 'next/router';
 
 
