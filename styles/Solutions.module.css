@@ -288,7 +288,6 @@ box-shadow: 10px 10px 5px -6px rgba(158,158,158,1);
 }
 
 .caseBox1{
-    /* background-image: url(../public/photos/pages/Navigation/Retail.png); */
     background-color: #000000; /* Used if the image is unavailable */
     background-position: center; /* Center the image */
     height: 8em;
@@ -297,7 +296,6 @@ box-shadow: 10px 10px 5px -6px rgba(158,158,158,1);
 }
 
 .caseBox2{
-    /* background-image: url(../public/photos/pages/Navigation/Mall.png); */
     background-color: #000000; /* Used if the image is unavailable */
     background-position: center; /* Center the image */
     height: 8em;
@@ -307,7 +305,6 @@ box-shadow: 10px 10px 5px -6px rgba(158,158,158,1);
 }
 
 .caseBox3{
-    /* background-image: url(../public/photos/pages/Navigation/Airport.png); */
     background-color: #000000; /* Used if the image is unavailable */
     background-position: center; /* Center the image */
     height: 8em;
@@ -315,7 +312,6 @@ box-shadow: 10px 10px 5px -6px rgba(158,158,158,1);
     background-size: cover;
 
 }.caseBox4{
-    /* background-image: url(../public/photos/pages/Navigation/Transportation.png); */
     background-color: #000000; /* Used if the image is unavailable */
     background-position: center; /* Center the image */
     height: 8em;
@@ -323,7 +319,6 @@ box-shadow: 10px 10px 5px -6px rgba(158,158,158,1);
     background-size: cover;
 
 }.caseBox5{
-    /* background-image: url(../public/photos/pages/Navigation/Cities.png); */
     background-color: #000000; /* Used if the image is unavailable */
     background-position: center; /* Center the image */
     height: 8em;
@@ -333,7 +328,6 @@ box-shadow: 10px 10px 5px -6px rgba(158,158,158,1);
 }
 
 .caseBox6{
-    /* background-image: url(../public/photos/pages/Navigation/Hospitality.png); */
     background-color: #000000; /* Used if the image is unavailable */
     background-position: center; /* Center the image */
     height: 8em;
