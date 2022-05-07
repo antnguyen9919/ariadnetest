@@ -41,8 +41,7 @@ const AriadneAnalytics = () => {
 
             <div className = {styles.heroTextContainer}>
             <div className={styles.heroText}>
-            <motion.h1 initial="hidden" animate="enter" exit="exit" variants={herovariants} transition={{duration: 0.5, type: 'spring', bounce: 0.3}} >Ariadne
-<br/>Analytics</motion.h1>
+            <motion.h1 initial="hidden" animate="enter" exit="exit" variants={herovariants} transition={{duration: 0.5, type: 'spring', bounce: 0.3}} >Ariadne Analytics</motion.h1>
               <motion.p initial="hidden" animate="enter" exit="exit" variants={herovariants} transition={{duration: 0.2, type: 'easeInOut'}}>Discover the potential of Ariadne Analytics for your business. Get to know your customers and explore the value behind it.</motion.p>
               
             </div>
