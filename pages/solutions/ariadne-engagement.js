@@ -143,10 +143,10 @@ Engagement</motion.h1>
             <div className={`${styles.products}  mt-20 mb-16`}>
         <h1 className='text-center'>Get Started</h1>
         
-          <div className={home.products}>
+          <div className={styles.productsIn}>
 
-          <div className = {home.product}>
-          <div className={`${home.productImg} ${styles.productImg}`}>
+          <div className = {styles.product}>
+          <div className={`${styles.productImg} ${styles.productImg}`}>
           <Image src={scan} alt=""/>
 
             </div>
@@ -155,8 +155,8 @@ Engagement</motion.h1>
                   <p>Let your customers simply tap their phones or scan a QR code</p>
           </div>
 
-          <div className = {home.product}>
-            <div className={`${home.productImg} ${styles.productImg}`}>
+          <div className = {styles.product}>
+            <div className={`${styles.productImg} ${styles.productImg}`}>
             <Image src={somescreen} alt=""/>
 
             </div>
@@ -164,8 +164,8 @@ Engagement</motion.h1>
                   <p>View them automatically added to your customized CRM tool</p>
           </div>
 
-          <div className = {home.product}>
-          <div className={`${home.productImg} ${styles.productImg}`}>
+          <div className = {styles.product}>
+          <div className={`${styles.productImg} ${styles.productImg}`}>
           <Image src={phone2} alt=""/>
 
             </div>

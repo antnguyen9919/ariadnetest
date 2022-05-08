@@ -411,7 +411,7 @@
   color:#ede9e9;
   margin-bottom: 2em;
   text-align: left;
-  
+  padding-left: 0;
 }
  .divider{
   width:100%; height:0.1px; background: #ede9e9
