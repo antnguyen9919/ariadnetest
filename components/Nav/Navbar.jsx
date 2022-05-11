@@ -231,14 +231,13 @@ const  Navbar = () => {
             
             
             <div className='items-center justify-end hidden md:flex'>
-            <Link href='/letstalk'><a className='transition ease-in hover:text-red-600 text-lg 2xl:text-2xl font-light text-white' >Let&rsquo;s talk</a></Link>
+            <Link href ="/letstalk"><a><button className='bg-red-600 hover:bg-red-700 py-1 px-3 2xl:text-lg text-white'  >Let&rsquo;s Talk</button></a></Link>
             {/* <Link href={!user? '/login':'/dashboard'}></Link> */}
             <a className=' text-base 2xl:text-2xl' href ='https://app.seulet.com' ><FaUserCircle className=' w-6 h-5 2xl:h-9 ml-7 text-white transition ease-in hover:scale-110' /></a>
             
             </div>
             
 
-            
           </div>
           
         </div>

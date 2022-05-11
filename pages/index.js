@@ -69,7 +69,6 @@ import s3 from "../public/Photos/brands/s3.png"
 
 
 
-import { useRouter } from 'next/router';
 
 
 const variants = {
