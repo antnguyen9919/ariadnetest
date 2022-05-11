@@ -5,11 +5,11 @@ import Head from 'next/head'
 import styles from '../../styles/Industries.module.css'
 import {ParallaxProvider} from 'react-scroll-parallax'
 import Parallaximg from '../../components/Parallaximg';
+import ContactForm from '../../components/ContactForm'
 
 // import {db} from '../../config/firebase'
 // import {collection, addDoc} from "firebase/firestore"
 
-import style from '../../styles/Contact.module.css'
 
 const contact = () => {
 //   const [firstName,setFirstName] = useState('')
@@ -91,10 +91,10 @@ const contact = () => {
  
     </ParallaxProvider>
     
-    <div className='h-full px-32'>
-            <div className='h-1/2 ' >
-              <h3 className='mt-32 mb-6'>Contact Us</h3>
-              <h4 className='mb-4'>Ariadne Maps GmbH</h4>
+    <div className={styles.contactRow}>
+    <div className={styles.contactColumn}>
+              <h3 className='mb-6'>Contact Us</h3>
+              <h4 className='mb-2'>Ariadne Maps GmbH</h4>
               <p className='mb-24'>
               Brecherspitzstraße 8<br/>
 
@@ -105,10 +105,14 @@ const contact = () => {
 contact@ariadnemaps.com 
               </p>
 
-            </div>
-            <div className='h-1/2'>
+              </div>
+
+            <div className={styles.contactColumn}>
+
+              <ContactForm />
 
             </div>
+
 
     </div></>
    
