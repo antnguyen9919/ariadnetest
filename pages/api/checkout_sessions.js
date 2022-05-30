@@ -1,6 +1,8 @@
+
+
 /*const stripe = require('stripe')(process.env.STRIPE_SECRET_KEY);*/
 
-export default async function handler(req, res) {
+/*export default async function handler(req, res) {
 	if (req.method === 'POST') {
 		try {
 			const session = await stripe.checkout.sessions.create({
@@ -24,3 +26,5 @@ export default async function handler(req, res) {
 		res.status(405).end('Method Not Allowed');
 	}
 }
+
+*/

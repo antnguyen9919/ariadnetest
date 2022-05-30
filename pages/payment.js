@@ -1,3 +1,4 @@
+/*
 import React from 'react'
 import Head from 'next/head'
 import { loadStripe } from '@stripe/stripe-js';
@@ -104,3 +105,5 @@ const payment = () => {
 };
 
 export default payment
+
+*/
