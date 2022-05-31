@@ -12,7 +12,7 @@ import Georgios from "/public/Photos/team/Georgios.png"
 import Nikos from "/public/Photos/team/Nikos.png"
 import Athanasions from "/public/Photos/team/Athanasios.png"
 import Elli from "/public/Photos/team/Elli.png"
-import Hasim from "/public/Photos/team/Hasim.png"
+import HasimKoc from "/public/Photos/team/HasimKoc.png"
 import Karolina from "/public/Photos/team/Karolina.png"
 import KostasK from "/public/Photos/team/KostasK.png"
 import KostasZ from "/public/Photos/team/KostasZ.png"
@@ -24,11 +24,19 @@ import Precious from "/public/Photos/team/Precious.png"
 import Roman from "/public/Photos/team/Roman.png"
 import Shahab from "/public/Photos/team/Shahab.png"
 import Wasiq from "/public/Photos/team/Wasiq.png"
-import Kostas from "/public/Photos/team/Kostas.png"
+import KostasT from "/public/Photos/team/KostasT.png"
+import Aykut from "/public/Photos/team/Aykut.png"
+
+import Sebastian from "/public/Photos/team/Sebastian.png"
+import Max from "/public/Photos/team/Max.png"
+import Indraditya from "/public/Photos/team/Indraditya.png"
+import Sean from "/public/Photos/team/Sean.png"
+import Charlene from "/public/Photos/team/Charlene.png"
+
 import Ted from "/public/Photos/team/Ted.png"
 import Victoria from "/public/Photos/team/Victoria.png"
 import Francesco from "/public/Photos/team/Francesco.png"
-import Pati from "/public/Photos/team/Pati.png"
+import PatiF from "/public/Photos/team/PatiF.png"
 import eu from "/public/Photos/team/eu.png"
 import eit from "/public/Photos/team/eit.png"
 
@@ -148,7 +156,7 @@ const AboutUs = () => {
    
    
     </h2>
-                     <p className='text-center'>Sales Representative
+                     <p className='text-center'>Business Development Manager
    
    
    
@@ -157,14 +165,14 @@ const AboutUs = () => {
    </p>
                    </div>
                    <div className={styles.columnA}>
-                   <Image src={Hasim} alt=''/>
+                   <Image src={HasimKoc} alt=''/>
                      <h2 className='text-center mt-2'style={{fontSize:"1.5em"}}>Hasim Koc
    
    
    
    
    </h2>
-                     <p className='text-center'>Sales Representative
+                     <p className='text-center'>Business Development Manager
    
    
    
@@ -202,7 +210,7 @@ const AboutUs = () => {
    
                <div className={styles.row}>
                    <div className={styles.columnA}>
-                   <Image src={Pati} alt=''/>
+                   <Image src={PatiF} alt=''/>
 
                      <h2 className='text-center mt-2'style={{fontSize:"1.5em"}}>
                        Pati Flannery
@@ -217,7 +225,7 @@ const AboutUs = () => {
                        Francesco Vasta
                            </h2>
                      <p className='text-center'>
-                       Sales Representative
+                       Key Account Manager
                        </p>
                    </div>
                    <div className={styles.columnA}>
@@ -241,12 +249,12 @@ const AboutUs = () => {
                      <h2 className='text-center mt-2'style={{fontSize:"1.5em"}}>
                      Najeeb Khan                      </h2>
                      <p className='text-center'>
-                     Computer Vision Engineer
+                     Software Engineer
    
    </p>
                    </div>
                    <div className={styles.columnA}>
-                   <Image src={Kostas} alt=''/>
+                   <Image src={KostasT} alt=''/>
 
                      <h2 className='text-center mt-2'style={{fontSize:"1.5em"}}>
                      Kostas Theocharoulis
@@ -292,7 +300,7 @@ const AboutUs = () => {
    
    </h2>
                      <p className='text-center'>
-                       Sales Representative
+                       Account Manager
                        </p>
                    </div>
                    <div className={styles.columnA}>
@@ -378,14 +386,102 @@ const AboutUs = () => {
    </p>
                    </div>
                    <div className={styles.columnA}>
-                   <Image src={Karolina} alt=''/>
+                   <Image src={Aykut} alt=''/>
 
                      <h2 className='text-center mt-2'style={{fontSize:"1.5em"}}>
-                     Karolina Piekarz
+                     Aykut Ongel
    
    </h2>
                      <p className='text-center'>
-                     Administrative Assistant
+                     Senior Embedded Software Engineer
+   
+   </p>
+                   </div>
+   
+                   </div>
+
+                   <div className={styles.row}>
+                   <div className={styles.columnA}>
+                   <Image src={Max} alt=''/>
+
+                     <h2 className='text-center mt-2'style={{fontSize:"1.5em"}}>
+                     Max Dorfmeister
+   
+   
+   </h2>
+                     <p className='text-center'>
+                     Key Account Manager
+   
+   
+   </p>
+                   </div>
+                   <div className={styles.columnA}>
+                   <Image src={Sebastian} alt=''/>
+
+                     <h2 className='text-center mt-2'style={{fontSize:"1.5em"}}>
+                     Sebastian Deppe
+   
+   
+   </h2>
+                     <p className='text-center'>
+                     VP DACH
+   
+   
+   </p>
+                   </div>
+                   <div className={styles.columnA}>
+                   <Image src={Ted} alt=''/>
+
+                     <h2 className='text-center mt-2'style={{fontSize:"1.5em"}}>
+                     Ted Polykandriotis
+   
+   </h2>
+                     <p className='text-center'>
+                     Business Officer
+   
+   </p>
+                   </div>
+   
+                   </div>
+
+                   <div className={styles.row}>
+                   <div className={styles.columnA}>
+                   <Image src={Sean} alt=''/>
+
+                     <h2 className='text-center mt-2'style={{fontSize:"1.5em"}}>
+                     Sean-Ethan Sahai
+   
+   
+   </h2>
+                     <p className='text-center'>
+                     Key Account Manager
+   
+   
+   </p>
+                   </div>
+                   <div className={styles.columnA}>
+                   <Image src={Indraditya} alt=''/>
+
+                     <h2 className='text-center mt-2'style={{fontSize:"1.5em"}}>
+                     Indraditya Bhattacharyya
+   
+   
+   </h2>
+                     <p className='text-center'>
+                     Data Scientist
+   
+   
+   </p>
+                   </div>
+                   <div className={styles.columnA}>
+                   <Image src={Charlene} alt=''/>
+
+                     <h2 className='text-center mt-2'style={{fontSize:"1.5em"}}>
+                     Charlene Su
+   
+   </h2>
+                     <p className='text-center'>
+                     Content Marketing & Branding Manager
    
    </p>
                    </div>
