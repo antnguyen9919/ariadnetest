@@ -1,5 +1,4 @@
 import Document, { Html, Head, Main, NextScript } from 'next/document'
-import Script from 'next/script'
 
 class WebDocument extends Document {
     render(){
@@ -7,7 +6,7 @@ class WebDocument extends Document {
     
             <Html lang="en-US">
             <Head>
-            <Script strategy="afterInteractive" dangerouslySetInnerHTML={{ __html:
+            <Script id="google-tag-manager" strategy="afterInteractive" dangerouslySetInnerHTML={{ __html:
             `
             (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
             new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
