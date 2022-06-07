@@ -110,7 +110,7 @@ contact@ariadnemaps.com
         <a className={`${styles.socialiconLink}`}>Privacy Policy</a>
       </Link>
       <Link 
-        href='/'><a className={`${styles.socialiconLink} pr-8`}>Impressum</a></Link>
+        href='/company/disclaimer'><a className={`${styles.socialiconLink} pr-8`}>Disclaimer</a></Link>
      
     </div>
   </div>
