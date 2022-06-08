@@ -300,7 +300,7 @@ const AboutUs = () => {
    
    </h2>
                      <p className='text-center'>
-                       Account Manager
+                       Key Account Manager
                        </p>
                    </div>
                    <div className={styles.columnA}>

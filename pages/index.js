@@ -265,7 +265,7 @@ export default function Home() {
             <div className={styles.brandsContainerTwoTwo}>
 
 
-            <Image src={s11} alt=""/>          
+            <Image src={s3} alt=""/>          
             <Image src={s19} alt=""/>
             <Image src={s20} alt=""/>
 
