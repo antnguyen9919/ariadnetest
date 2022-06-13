@@ -52,7 +52,7 @@ function Footer() {
       <h3 className='text-2xl' >Company</h3>
       <Link href='/company/about-us'>About Us</Link>
       <Link href='/why-ariadne'>Why Ariadne</Link>
-      <Link href='/resources'>Resources</Link>
+     {/* <Link href='/resources'>Resources</Link> */}
       <Link href='/blog'>Blog</Link>
       <Link href='/company/careers'>Careers</Link>
     </div>
