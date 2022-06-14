@@ -5,8 +5,9 @@ import {AnimatePresence} from "framer-motion"
 import { useEffect } from 'react';
 import TagManager from 'react-gtm-module';
 
+import Script from 'next/script'
 
-
+ 
 
 function MyApp({ Component, pageProps }) {
 
@@ -16,13 +17,25 @@ function MyApp({ Component, pageProps }) {
 
   return(
    
-      <Layout>
+     <>
+    <Script strategy="lazyOnload" src = {`https://www.googletagmanager.com/gtag/js?id=G-DY5ZJ1KV4Y`} />
+
+    <Script strategy="lazyOnload"  >
+      {`window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-DY5ZJ1KV4Y');`}
+    </Script>   
+
+<Layout>
     <AnimatePresence initial={true} exitBeforeEnter> 
       
       <Component {...pageProps} />
     
     </AnimatePresence>
     </Layout>
+     </>
    
    ) 
 }
