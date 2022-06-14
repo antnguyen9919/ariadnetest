@@ -1400,7 +1400,7 @@
         }
         
         .gifbox{
-            padding: 5vh 5vw;
+            /* padding: 5vh 5vw; */
             min-height:30vh;
             display: flex;
             justify-content: space-around;
@@ -1414,7 +1414,7 @@
         }
         
         .gif{
-            width: 30vw; 
+            width: 37vw; 
             padding: 3em;
         }
         

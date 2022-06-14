@@ -717,7 +717,7 @@ variants = {variants} animate = {controls9}>
 
           <iframe src="https://calendly.com/georgios-ariadnemaps/30min?month=2022-03"
           loading='lazy'          
-          frameBorder="0" max-width='100%' height='700em' backgroundColor = "white" title = 'calendly' sandbox="allow-same-origin allow-scripts" ></iframe>
+          frameBorder="0" max-width='100%' height='700em' backgroundcolor = "white" title = 'calendly' sandbox="allow-same-origin allow-scripts" ></iframe>
           
           
         </div>
