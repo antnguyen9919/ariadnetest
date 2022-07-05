@@ -14,7 +14,7 @@ import { getPosts } from '../services';
   
   export const getServerSideProps = async ({ res }) => {
   
-    const BASE_URL = 'https://www.ariadnemaps.com/'; //This is where you will define your base url. You can also use the default dev url http://localhost:3000
+    const BASE_URL = 'https://ariadnetest.vercel.app'; //This is where you will define your base url. You can also use the default dev url http://localhost:3000
   
     const staticPaths = fs
       .readdirSync("pages")
