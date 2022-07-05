@@ -5,8 +5,7 @@ import BlogStyle from '../../styles/Blog.module.scss'
 import { getPosts } from '../../services'
 import {FeaturedPosts} from '../../sections';
 import { BlogHeader } from '../../components'
-// import { motion } from 'framer-motion'
-// Fetch data at build time
+import ReactPaginate from 'react-paginate';
 
 export async function getStaticProps() {
     const posts = (await getPosts()) || [];
@@ -15,9 +14,10 @@ export async function getStaticProps() {
     };
   }
 
- 
+  
 
-  export default function Home({ posts }) {
+ 
+export default function Home({ posts }) {
    
 
 return (

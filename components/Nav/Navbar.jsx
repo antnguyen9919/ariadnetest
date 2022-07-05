@@ -1,13 +1,13 @@
 import React,{useRef} from 'react'
 import Link from 'next/link' 
 import {Popover,Transition} from '@headlessui/react'
-
-
-
+import { CircleFlag } from 'react-circle-flags'
+import { i18n } from 'next-i18next'
+import { useRouter } from "next/router";
 import {DiGoogleAnalytics} from 'react-icons/di'
 import {BiNavigation,BiNotification,BiUser} from 'react-icons/bi'
 
-import {FaUserCircle} from 'react-icons/fa'
+// import {FaUserCircle} from 'react-icons/fa'
 
 import {MdLocalAirport,MdStoreMallDirectory,
   MdEmojiTransportation,MdLocationCity,MdRoomService, MdMenu} from 'react-icons/md'
@@ -42,11 +42,12 @@ const  Navbar = () => {
   let solutionRef = useRef(null)
   let industriesRef = useRef(null)
   let companyRef = useRef(null)
+  let langRef = useRef(null)
   
 
-
+  const { locale, locales, defaultLocale, asPath } = useRouter();
   
-  
+  console.log(locale)
   return (
 
     <div  >
@@ -101,7 +102,7 @@ const  Navbar = () => {
             leaveTo="transform scale-95 opacity-0"
           >
                 <Popover.Panel onMouseLeave={close}
-                              className='absolute z-10 w-screen max-w-md px-2 mt-6 -ml-4  transform sm:px-0 lg:ml-0 lg:-translate-x-1/2'
+                              className='absolute z-10 w-screen max-w-xs px-2 mt-6 -ml-4  transform sm:px-0 lg:ml-0 lg:-translate-x-1/2'
                 >
                   <div className="overflow-hidden rounded-lg shadow-lg ring-1 ring-black ring-opacity-5  ">
                     <div className='relative grid gap-6 px-5 py-6 bg-white opacity-95 sm:gap-8 sm:p-8'>
@@ -148,7 +149,7 @@ const  Navbar = () => {
             leaveTo="transform scale-95 opacity-0"
           >
                 <Popover.Panel onMouseLeave={close}
-                              className='absolute z-10 w-screen max-w-md px-2 mt-6 -ml-4  transform sm:px-0 lg:ml-0 lg:-translate-x-1/2'
+                              className='absolute z-10 w-screen max-w-xs px-2 mt-6 -ml-4  transform sm:px-0 lg:ml-0 lg:-translate-x-1/2'
                 >
                   <div className="overflow-hidden rounded-lg shadow-lg ring-1 ring-black ring-opacity-5  ">
                     <div className='relative grid gap-6 px-5 py-6 bg-white opacity-95 sm:gap-8 sm:p-8 '>
@@ -198,13 +199,13 @@ const  Navbar = () => {
             leaveTo="transform scale-95 opacity-0"
           >
                 <Popover.Panel onMouseLeave={close}
-                              className='absolute z-10 w-screen max-w-md px-2 mt-6 -ml-4  transform sm:px-0 lg:ml-0 lg:-translate-x-1/2'
+                              className='absolute z-10 w-screen max-w-xs px-2 mt-6 -ml-4  transform sm:px-0 lg:ml-0 lg:-translate-x-1/2'
                 >
                   <div className="overflow-hidden rounded-lg shadow-lg ring-1 ring-black ring-opacity-5  ">
                     <div className='relative grid gap-6 px-5 py-6 bg-white opacity-95 sm:gap-8 sm:p-8 '>
 
                       {company.map((comp,index)=>(
-                        <Link key = {index} href = {comp.href}><a className='flex items-start 
+                        <Link key = {index} href = {comp.href} ><a className='flex items-start 
                         p-2 -m-3 rounded-lg text-gray-500 hover:text-black transition ease-in-out '>
 <div className='ml-4 '>
                             <p className='text-md  font-semibold'>{comp.title}</p>
@@ -233,7 +234,64 @@ const  Navbar = () => {
             <div className='items-center justify-end hidden md:flex'>
             <Link href ="/letstalk"><a><button className='bg-red-600 hover:bg-red-700 py-1 px-3 2xl:text-lg text-white'  >Let&rsquo;s Talk</button></a></Link>
             {/* <Link href={!user? '/login':'/dashboard'}></Link> */}
-            <a className=' text-base 2xl:text-2xl' href ='https://app.seulet.com' ><FaUserCircle className=' w-6 h-5 2xl:h-9 ml-7 text-white transition ease-in hover:scale-110' /></a>
+            {/* <a className=' text-base 2xl:text-2xl' href ='https://app.seulet.com' >
+            <FaUserCircle className=' w-6 h-5 2xl:h-9 ml-7 text-white transition ease-in hover:scale-110' />
+            <CircleFlag countryCode="de" className=' w-8 h-full 2xl:h-9 ml-7 transition ease-in hover:scale-110' />
+            </a> */}
+
+            <Popover>
+               {({open,close})=>(
+                 <>
+                 <Popover.Button 
+                 ref={langRef}
+                 onMouseEnter={()=>langRef.current.click()}
+                 className='inline-flex items-center text-base font-medium rounded-ms  focus:outline-none '
+                 >
+                   <span><CircleFlag countryCode={(locale==="de"||locale==="fr")? locale: "gb"  } className=' w-8 h-full 2xl:h-9 ml-7 transition ease-in hover:scale-110' /></span>
+
+                 </Popover.Button>
+                 <Transition
+            show={open}
+            enter="transition duration-100 ease-out"
+            enterFrom="transform scale-95 opacity-0"
+            enterTo="transform scale-100 opacity-100"
+            leave="transition duration-75 ease-out"
+            leaveFrom="transform scale-100 opacity-100"
+            leaveTo="transform scale-95 opacity-0"
+          >
+                <Popover.Panel onMouseLeave={close}
+                              className='absolute z-10 w-screen max-w-xs px-2 mt-6 -ml-4  transform sm:px-0 lg:ml-0 lg:-translate-x-1/2'
+                >
+                  <div className="overflow-hidden rounded-lg shadow-lg ring-1 ring-black ring-opacity-5  ">
+                    <div className='relative grid gap-6 px-5 py-6 bg-white opacity-95 sm:gap-8 sm:p-8'>
+                    
+                    <Link href={asPath} locale="en"><a className='flex items-center cursor-pointer transition ease-in hover:scale-110'>
+                    <span><CircleFlag countryCode="gb" className=' w-8 h-full 2xl:h-9 ml-7 ' /> </span>
+                    <span><h1 className=' w-8 h-full 2xl:h-9 ml-7'>English</h1> </span>
+                    
+                    </a></Link>
+                   <Link href={asPath} locale="de"><a className='flex items-center cursor-pointer transition ease-in hover:scale-110'>
+                    <span><CircleFlag countryCode="de" className=' w-8 h-full 2xl:h-9 ml-7 ' /> </span>
+                    <span><h1 className=' w-8 h-full 2xl:h-9 ml-7'>German</h1> </span>
+                    
+                    </a></Link>
+                    <Link href={asPath} locale="fr"><a className='flex items-center cursor-pointer transition ease-in hover:scale-110'>
+                    <span><CircleFlag countryCode="fr" className=' w-8 h-full 2xl:h-9 ml-7 ' /> </span>
+                    <span><h1 className=' w-8 h-full 2xl:h-9 ml-7'>French</h1> </span>
+                    
+                    </a></Link>
+                    
+                    
+                    </div>
+                  </div>
+
+                </Popover.Panel>
+                    </Transition>
+
+
+                 </>
+               )}
+              </Popover>
             
             </div>
             

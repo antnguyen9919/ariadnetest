@@ -2,7 +2,7 @@ import Head from 'next/head'
 import Image from 'next/image'
 import Link from 'next/link'
 import { useState } from 'react';
-
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations.js';
 
 import smallScreen from "../public/Photos/smallScreen.png"
 import screens from '../public/Photos/screens.png'
@@ -66,9 +66,15 @@ import device2 from "../public/Photos/device2.png"
 import screen from "../public/Photos/screen.png"
 import s3 from "../public/Photos/brands/s3.png"
 
+import { useTranslation } from 'next-i18next';
 
-
-
+export async function getStaticProps({ locale }) {
+  return {
+    props: {
+    ...(await serverSideTranslations(locale, ["home"])),
+    },
+  };
+}
 
 
 const variants = {
@@ -103,10 +109,10 @@ const RLvariants ={
 
 
 
-export default function Home() {
+export default function Home(props) {
 
 
-  
+  const {t} = useTranslation("home");
   
   const [element,controls] = useScroll();
  
@@ -195,9 +201,10 @@ export default function Home() {
 
             <div className = {styles.heroTextContainer}>
             <div className={styles.heroText}>
-            <h1  > From People Flow To Actionable Insights</h1>
-            <p style = {{paddingTop: "10px"}}>Identify the moment when your visitors become your customers</p>
-            <Link href ="/letstalk"><a><button className={styles.heroButton} /*'bg-red-600 hover:bg-red-700 py-1 px-3 2xl:text-lg' style = {{marginTop:"20px"}}*/ >Let&rsquo;s Talk</button></a></Link>
+            <h1> {t('hero-title')} </h1>
+            <p style = {{paddingTop: "10px"}}>{t('hero-sub')}</p>
+
+            <Link href ="/letstalk"><a><button className={styles.heroButton}>Let&rsquo;s Talk</button></a></Link>
             </div>
             </div>
 
@@ -208,25 +215,12 @@ export default function Home() {
             
             src ="/Videos/herosection.mp4" 
             type="videos/mp4" autoPlay playsInline muted loop  />
-            {/* <Image
-            
-            layout="responsive"
-            alt='homepageScreen'
-            priority
-            src = {smallScreen} /> */}
+           
             </div>
 
           </div>
         </div>
-        {/*
-        <div className='block h-96 xl:hidden 2xl:hidden flex flex-row justify-center bg-gradient-to-b from-slate-700 to-slate-800 text-white'>
-        <div className=' my-auto mx-auto w-5/6' >
-            <h1  >From People Flow To <br/> Actionable Insights</h1>
-            <p style = {{fontSize:"20px", fontWeight:"200", paddingTop: "10px"}}>Identify the moment when your visitors become your customers</p>
-              <Link href ="/letstalk"><a ><button className=' bg-red-600 hover:bg-red-700 py-1 px-3 2xl:text-lg mt-4'>Let&rsquo;s Talk</button></a></Link>
-            </div>
-        </div>
-          */}
+        
 
       <main className={styles.main}>
         
@@ -408,19 +402,16 @@ export default function Home() {
               initial="hidden"  exit="exit"
               variants = {RLvariants} animate = {controls}
               >
-                <h2 /*className= '2xl:leading-loose' */ style = {{margin:"0.5em 0em"}}>Responsible, Precise, Intuitive</h2>
+                <h2 /*className= '2xl:leading-loose' */ style = {{margin:"0.5em 0em"}}>{t('section1')}</h2>
                 <p /*className= ' 2xl:leading-loose' style = {{fontSize:"18px"}}*/>
-                Ariadne is the operating system of commercial real estates that provides advanced, 
-                real-time customer analytics enabled with award winning accuracy and certified privacy 
-                compliance. <br/> Track your customer journey with Ariadne’s low-cost, plug-and-play solution – no 
-                app, no network connection, no cameras!</p>
+                {t('section1_body')}</p>
 
                 <p id={styles.list} /*className= 'leading-10 2xl:leading-loose'*/>
 
-      <span><CheckIcon /></span>&nbsp; &nbsp; &nbsp;Footfall, Dwell Time, Heatmap, Transitions Between Areas, ERP/BI/POS Integration... <br/>
-      <span><CheckIcon /></span>&nbsp; &nbsp; &nbsp;Workforce Management<br/>
-      <span><CheckIcon /></span>&nbsp; &nbsp; &nbsp;Asset Tracking<br/>
-      <span><CheckIcon /></span>&nbsp; &nbsp; &nbsp;Navigation<br/>
+      <span><CheckIcon /></span>&nbsp; &nbsp; &nbsp;{t('section1_l1')}<br/>
+      <span><CheckIcon /></span>&nbsp; &nbsp; &nbsp;{t('section1_l2')}<br/>
+      <span><CheckIcon /></span>&nbsp; &nbsp; &nbsp;{t('section1_l3')}<br/>
+      <span><CheckIcon /></span>&nbsp; &nbsp; &nbsp;{t('section1_l4')}<br/>
 
       </p>
               </motion.div>
@@ -435,7 +426,7 @@ initial="hidden"  exit="exit"
 variants = {variants} animate = {controls2}>
 
 <div className='flex flex-row justify-center' >
-<h1 className='text-center' /* xl:w-3/4 sm:w-full xs:w-full' style={{fontSize:"40px"}} */>See how our customers are succeeding <br/> with Ariadne</h1>
+<h1 className='text-center' /* xl:w-3/4 sm:w-full xs:w-full' style={{fontSize:"40px"}} */>{t('section2')}</h1>
           </div>
 
 </motion.div>
@@ -454,7 +445,7 @@ variants = {variants} animate = {controls2}>
               transition={{duration: 0.4, type: 'easeInOut'}} 
               initial="hidden"  exit="exit"
               variants = {variants} animate = {controls3}>
-          <h1 className='text-center'>Ariadne Platform</h1>
+          <h1 className='text-center'>{t('section3')}</h1>
 
               </motion.div>
 
