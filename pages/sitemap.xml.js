@@ -5,7 +5,7 @@ import { getPosts } from '../services';
 
 
 
-  import React from "react";
+
   import * as fs from "fs";
   
   const Sitemap = () => {
